@@ -18,7 +18,10 @@ export default Controller.extend({
   actions: {
     mapLoaded(e) {
       window.map = e;
-    }
+    },
+    chooseOption(option) {
+      this.set('selectedOption', option);
+    },
   }
 });
 // END-SNIPPET
