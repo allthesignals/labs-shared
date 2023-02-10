@@ -1,1 +1,1 @@
-export { default, initialize } from 'ember-mapbox-composer/initializers/consumer-environment';
+export { default, initialize } from 'labs-shared/initializers/consumer-environment';

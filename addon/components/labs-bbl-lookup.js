@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import layout from '../templates/components/labs-bbl-lookup';
-import carto from 'ember-mapbox-composer/utils/carto';
+import carto from 'labs-shared/utils/carto';
 
 export default Component.extend({
   init() {

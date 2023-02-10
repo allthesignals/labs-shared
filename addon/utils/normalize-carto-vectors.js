@@ -1,4 +1,4 @@
-import carto from 'ember-mapbox-composer/utils/carto';
+import carto from 'labs-shared/utils/carto';
 import { isArray } from '@ember/array';
 import { getProperties } from '@ember/object';
 import { Promise } from 'rsvp';

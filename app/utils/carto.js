@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/utils/carto';
+export { default } from 'labs-shared/utils/carto';

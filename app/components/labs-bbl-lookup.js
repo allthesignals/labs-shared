@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/components/labs-bbl-lookup';
+export { default } from 'labs-shared/components/labs-bbl-lookup';

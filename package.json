@@ -1,5 +1,5 @@
 {
-  "name": "ember-mapbox-composer",
+  "name": "labs-shared",
   "version": "1.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
@@ -11,7 +11,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/NYCPlanning/ember-mapbox-composer",
+  "repository": "https://github.com/allthesignals/labs-shared",
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",

@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/components/labs-map';
+export { default } from 'labs-shared/components/labs-map';

@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/components/labs-ui/site-header-title';
+export { default } from 'labs-shared/components/labs-ui/site-header-title';

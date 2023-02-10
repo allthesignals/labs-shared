@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/utils/normalize-carto-vectors';
+export { default } from 'labs-shared/utils/normalize-carto-vectors';

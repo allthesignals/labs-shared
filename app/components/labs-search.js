@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/components/labs-search';
+export { default } from 'labs-shared/components/labs-search';

@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/services/layer-groups';
+export { default } from 'labs-shared/services/layer-groups';

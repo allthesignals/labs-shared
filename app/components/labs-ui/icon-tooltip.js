@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/components/labs-ui/icon-tooltip';
+export { default } from 'labs-shared/components/labs-ui/icon-tooltip';

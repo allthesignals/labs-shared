@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/components/labs-map-legend-line';
+export { default } from 'labs-shared/components/labs-map-legend-line';

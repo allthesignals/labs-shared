@@ -1,1 +1,1 @@
-export { default, dasherize } from 'ember-mapbox-composer/helpers/dasherize';
+export { default, dasherize } from 'labs-shared/helpers/dasherize';

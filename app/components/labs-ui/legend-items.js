@@ -1,1 +1,1 @@
-export { default } from 'ember-mapbox-composer/components/labs-ui/legend-items';
+export { default } from 'labs-shared/components/labs-ui/legend-items';
