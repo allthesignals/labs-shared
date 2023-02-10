@@ -25,6 +25,18 @@ module.exports = function(environment) {
       },
     },
 
+    'labs-search': {
+      helpers: [
+        'geosearch-v2',
+        'bbl',
+        'neighborhood',
+        'zoning-district',
+        'zoning-map-amendment',
+        'special-purpose-district',
+        'commercial-overlay',
+      ],
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

@@ -55,15 +55,15 @@
 @include foundation-float-classes;
 
 
-//
-// NYC Planning Style Guide modules (import all or some)
-// --------------------------------------------------
+// //
+// // NYC Planning Style Guide modules (import all or some)
+// // --------------------------------------------------
 
 @import 'modules/nyc-planning-all-modules';
 
-//
-// Labs UI modules (import all or some)
-// --------------------------------------------------
+// //
+// // Labs UI modules (import all or some)
+// // --------------------------------------------------
 @import 'labs-ui/all-modules';
 @import "ember-power-select";
 
