@@ -1,0 +1,1 @@
+export { default } from 'labs-shared/components/deprecated/site-header';
