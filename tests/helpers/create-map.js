@@ -1,21 +1,21 @@
 import { Promise } from 'rsvp';
 import Config from '../../config/environment';
-import MapboxGl from 'mapbox-gl';
+import MaplibreGl from 'maplibre-gl';
 import QUnit from 'qunit';
 
-MapboxGl.accessToken = Config['mapbox-gl'].accessToken;
+MaplibreGl.accessToken = Config['maplibre-gl'].accessToken;
 
 export default function createMap() {
   return new Promise((resolve) => {
-    const map = new MapboxGl.Map({
+    const map = new MaplibreGl.Map({
       container: document.createElement('div'),
-      style: Config['mapbox-gl'].map.style
+      style: Config['maplibre-gl'].map.style
     });
 
     map.style.once('data', () => resolve(map));
 
     const onErr = (data) => {
-      QUnit.onUnhandledRejection((data && data.error) || data || 'Empty error event from mapbox-gl-js');
+      QUnit.onUnhandledRejection((data && data.error) || data || 'Empty error event from maplibre-gl-js');
     };
 
     map.style.on('error', onErr);

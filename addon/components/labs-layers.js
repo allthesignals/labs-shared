@@ -6,7 +6,7 @@ import ArrayProxy from '@ember/array/proxy';
 import { warn } from '@ember/debug';
 
 /**
-  Renders a collection of Mapbox Composer-compatible layer groups.
+  Renders a collection of Maplibre Composer-compatible layer groups.
 
   ```js
   // routes/application.js
@@ -50,7 +50,7 @@ import { warn } from '@ember/debug';
 */
 export default Component.extend({
   /**
-    Reference to a instance of a MapboxGL map. Handled internally when using contextual components:
+    Reference to a instance of a MaplibreGL map. Handled internally when using contextual components:
 
     ```
   {{#labs-map as |map|}}
@@ -59,7 +59,7 @@ export default Component.extend({
     ```
     @argument map
     @private
-    @type MapboxGL Map Instance
+    @type MaplibreGL Map Instance
   */
   map: null,
 
@@ -153,7 +153,7 @@ export default Component.extend({
     const map = this.get('map');
 
     warn(`Missing ID in properties for ${feature.layer.source}`, feature.properties.id, { 
-      id: 'ember-mapbox-composer.id-missing' 
+      id: 'ember-maplibre-composer.id-missing' 
     });
 
     // require an id for stitching

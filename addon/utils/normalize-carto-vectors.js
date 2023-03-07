@@ -5,11 +5,11 @@ import { Promise } from 'rsvp';
 
 const { getVectorTileTemplate } = carto;
 
-export default function normalizeCartoVectors(pseudoMapboxGlSources = []) {
+export default function normalizeCartoVectors(pseudoMaplibreGlSources = []) {
   // coerce to an array
-  const iterable = isArray(pseudoMapboxGlSources) ? pseudoMapboxGlSources : [pseudoMapboxGlSources];
+  const iterable = isArray(pseudoMaplibreGlSources) ? pseudoMaplibreGlSources : [pseudoMaplibreGlSources];
 
-  // normalize into mapbox-gl source spec
+  // normalize into maplibre-gl source spec
   return Promise.all(iterable.map((source) => {
     const {
       id,

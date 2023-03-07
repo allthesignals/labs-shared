@@ -7,7 +7,7 @@ module.exports = {
   },
   options: {
     autoImport: {
-      exclude: ['mapbox-gl'],
+      exclude: ['maplibre-gl'],
       webpack: {
         module: {
           rules: [

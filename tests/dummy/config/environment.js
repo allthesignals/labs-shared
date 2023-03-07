@@ -18,7 +18,7 @@ module.exports = function (environment) {
       },
     },
 
-    'mapbox-gl': {
+    'maplibre-gl': {
       accessToken: 'peanut-butter',
       map: {
         style: '//raw.githubusercontent.com/NYCPlanning/labs-gl-style/master/data/style.json',

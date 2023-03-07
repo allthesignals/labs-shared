@@ -19,7 +19,7 @@ module('Integration | Component | labs-layers', {
   setupRenderingTest(hooks);
 
   // todo: fix bug
-  skip('changes to model filter mutate mapbox state', async function(assert) {
+  skip('changes to model filter mutate maplibre state', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
     let store = this.owner.lookup('service:store');
@@ -80,7 +80,7 @@ module('Integration | Component | labs-layers', {
     );
   });
 
-  test('changes to model paint mutate mapbox state', async function(assert) {
+  test('changes to model paint mutate maplibre state', async function(assert) {
     let store = this.owner.lookup('service:store');
 
     this.layer = await run(() =>

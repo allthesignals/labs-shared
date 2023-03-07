@@ -12,7 +12,7 @@ export default class LayerGroupAdapter extends JSONAPIAdapter {
 
     const {
       host = DEFAULT_HOST,
-    } = getOwner(this).resolveRegistration('config:environment')['ember-mapbox-composer'] || {};
+    } = getOwner(this).resolveRegistration('config:environment')['ember-maplibre-composer'] || {};
 
     this.set('host', host);
     this.set('namespace', 'v1');

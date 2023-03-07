@@ -19,7 +19,7 @@ export default Model.extend({
   init(...args) {
     this._super(...args);
 
-    // enforce presence of blank object for mapboxGL validation
+    // enforce presence of blank object for maplibreGL validation
     if (!this.get('style.layout')) this.set('style.layout', {});
 
     // determine which is the first occurring layer
@@ -88,17 +88,17 @@ export default Model.extend({
 
 
   /**
-    Computed alias that returns a newly built mapbox layer object. Necessary to maintain state bindings.
-    @property mapboxGlStyle
+    Computed alias that returns a newly built maplibre layer object. Necessary to maintain state bindings.
+    @property maplibreGlStyle
     @type Object
     @private
   */
-  mapboxGlStyle: computed('style.{paint,layout,filter}', function() {
+  maplibreGlStyle: computed('style.{paint,layout,filter}', function() {
     return this.get('style');
   }),
 
   /**
-    Getter and setter for filter. Array structure should follow Mapbox's [Expression](https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions) syntax.
+    Getter and setter for filter. Array structure should follow Maplibre's [Expression](https://www.maplibre.com/maplibre-gl-js/style-spec/#expressions) syntax.
     @property filter
     @type Array
   */
@@ -112,7 +112,7 @@ export default Model.extend({
   }),
 
   /**
-    Getter and setter for visibility. Mutates a Mapbox property that actually determines visibility. Depends on parent visibility.
+    Getter and setter for visibility. Mutates a Maplibre property that actually determines visibility. Depends on parent visibility.
 
     @property visibility
     @type Boolean

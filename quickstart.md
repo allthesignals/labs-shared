@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide will help you get started with Ember Mapbox Composer. After completion you will have a collection of layer-groups visible on a map.
+This guide will help you get started with Ember Maplibre Composer. After completion you will have a collection of layer-groups visible on a map.
 
 ---
 
@@ -8,21 +8,21 @@ This guide will help you get started with Ember Mapbox Composer. After completio
 
 1. Install the addon:
   ```
-  ember install ember-mapbox-composer
+  ember install ember-maplibre-composer
   ```
 
-1. Install Mapbox GL:
+1. Install Maplibre GL:
   ```
-  yarn add mapbox-gl
+  yarn add maplibre-gl
   ```
 
 ---
 
 ## Get a map into your template
 
-1. Add `mapbox-gl` to the `ENV` object in `config/environment.js`:
+1. Add `maplibre-gl` to the `ENV` object in `config/environment.js`:
   ```js
-  'mapbox-gl': {
+  'maplibre-gl': {
     accessToken: '',
     map: {
       style: 'https://layers-api-staging.planninglabs.nyc/v1/base/style.json',

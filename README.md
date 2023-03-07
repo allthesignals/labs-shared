@@ -1,11 +1,11 @@
-ember-mapbox-composer
+ember-maplibre-composer
 ==============================================================================
 
 # Introduction
 
 Mapping applications occupy their own niche within the broader web development ecosystem, and ambitious web maps demand an framework like EmberJS. 
 
-MapboxGL, a powerful GL engine for beautiful web maps, and [ember-mapbox-gl](https://github.com/kturney/ember-mapbox-gl), a bindings addon for EmberJS and Mapbox, lay the groundwork for ambitious web mapping applications, but leave gaps in:
+MaplibreGL, a powerful GL engine for beautiful web maps, and [ember-maplibre-gl](https://github.com/kturney/ember-maplibre-gl), a bindings addon for EmberJS and Maplibre, lay the groundwork for ambitious web mapping applications, but leave gaps in:
 
 1. Layer composition
 2. Complex source management
@@ -590,7 +590,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-mapbox-composer
+ember install ember-maplibre-composer
 ```
 
 
@@ -606,7 +606,7 @@ Contributing
 ### Installation
 
 * `git clone <repository-url>`
-* `cd ember-mapbox-composer`
+* `cd ember-maplibre-composer`
 * `npm install`
 
 ### Linting

@@ -12,6 +12,6 @@ module('Integration | Component | labs-map', function(hooks) {
 
     await render(hbs`{{labs-map}}`);
 
-    assert.equal(this.element.textContent.trim(), 'Missing Mapbox GL JS CSS');
+    assert.equal(this.element.textContent.trim(), 'Missing Maplibre GL JS CSS');
   });
 });

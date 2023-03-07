@@ -1,4 +1,4 @@
-import mapboxGlMap from 'ember-mapbox-gl/components/mapbox-gl';
+import maplibreGlMap from 'ember-maplibre-gl/components/maplibre-gl';
 import { assign } from '@ember/polyfills';
 import { get } from '@ember/object';
 import { computed } from '@ember/object';
@@ -23,7 +23,6 @@ const highlightedCircleFeatureLayer = {
   },
 };
 
-
 const highlightedLineFeatureLayer = {
   id: 'highlighted-feature-line',
   source: 'hovered-feature',
@@ -41,7 +40,7 @@ const highlightedLineFeatureLayer = {
 };
 
 /**
-  Extends `mapbox-gl` component to yield `labs-layers` contextual component. Allows passage of layer-groups.
+  Extends `maplibre-gl` component to yield `labs-layers` contextual component. Allows passage of layer-groups.
 
   ```js
   // routes/application.js
@@ -62,41 +61,42 @@ const highlightedLineFeatureLayer = {
   @class LabsMapComponent
   @public
 */
-export default mapboxGlMap.extend({
+export default class extends maplibreGlMap {
   init(...args) {
-    this._super(...args);
-
+    super.init(...args);
+    console.log(args.layerGroups);
+    console.log(this.layerGroups);
     // if layerGroups are passed to the map, use the style from that
-    if (this.get('layerGroups')) {
+    if (this.layerGroups) {
+      console.log('hi hi')
       const {
-        meta: {
-          mapboxStyle
-        }
-      } = this.get('layerGroups') || {};
+        meta: { mapboxStyle },
+      } = this.layerGroups || {};
 
-      if (mapboxStyle) assign(get(this, 'initOptions') || {}, { style: mapboxStyle });
+      if (mapboxStyle)
+        assign(this.initOptions || {}, { style: mapboxStyle });
     }
-  },
+  }
 
-  hoveredFeatureSource: computed('hoveredFeature', function() {
-    const feature = this.get('hoveredFeature');
+  @computed('hoveredFeature')
+  get hoveredFeatureSource() {
+    const feature = this.hoveredFeature;
 
     return {
       type: 'geojson',
       data: feature,
     };
-  }),
+  }
 
-  hoveredFeature: null,
-  highlightedCircleFeatureLayer,
-  highlightedLineFeatureLayer,
+  hoveredFeature = null;
+  highlightedCircleFeatureLayer = highlightedCircleFeatureLayer;
+  highlightedLineFeatureLayer = highlightedLineFeatureLayer;
 
   /**
     Collection of layer-group models (see: [DS.RecordArray](https://emberjs.com/api/ember-data/release/classes/DS.RecordArray)).
-    Allows optional `meta` object with a `mapboxStyle` property which is passed to the mapbox-gl instance.
+    Allows optional `meta` object with a `maplibreStyle` property which is passed to the maplibre-gl instance.
     @argument layerGroups
     @type DS.RecordArray
   */
-  layerGroups: null,
-
-});
+  layerGroups = null;
+}

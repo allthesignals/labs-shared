@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-mapbox-composer`
+* `cd ember-maplibre-composer`
 * `yarn install`
 
 ## Linting

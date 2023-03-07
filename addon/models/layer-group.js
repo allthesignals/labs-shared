@@ -27,7 +27,7 @@ export default Model.extend({
 
   /**
     Abstraction for the visibility state of related layers. Mutations will fire updates to child layers.
-    Simple modifies a property of the MapboxGL `layout` style property. Does not add or remove layers.
+    Simple modifies a property of the MaplibreGL `layout` style property. Does not add or remove layers.
 
     @property visible
     @type Boolean
@@ -64,7 +64,7 @@ export default Model.extend({
   title: alias('legend.label'),
 
   /**
-    Convenience property for a list of internal MapboxGL layer IDs.
+    Convenience property for a list of internal MaplibreGL layer IDs.
 
     @property layerIds
     @type Array
@@ -87,7 +87,7 @@ export default Model.extend({
 
     @method setPaintForLayer
     @param {String|Number} id ID of the layer-group's layer
-    @param {Object} paint MapboxGL Style [paint](https://www.mapbox.com/mapbox-gl-js/style-spec/#layer-paint) object to override
+    @param {Object} paint MaplibreGL Style [paint](https://www.maplibre.com/maplibre-gl-js/style-spec/#layer-paint) object to override
   */
   setPaintForLayer(...args) {
     this._mutateLayerProperty('paint', ...args);
@@ -98,7 +98,7 @@ export default Model.extend({
 
     @method setFilterForLayer
     @param {String|Number} id ID of the layer-group's layer
-    @param {Object} filter MapboxGL Style [expressions array](https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions) to override
+    @param {Object} filter MaplibreGL Style [expressions array](https://www.maplibre.com/maplibre-gl-js/style-spec/#expressions) to override
   */
   setFilterForLayer(...args) {
     this._mutateLayerProperty('filter', ...args);
@@ -109,7 +109,7 @@ export default Model.extend({
 
     @method setLayoutForLayer
     @param {String|Number} id ID of the layer-group's layer
-    @param {Object} layout MapboxGL Style [layout](https://www.mapbox.com/mapbox-gl-js/style-spec/#layout-property) object to override
+    @param {Object} layout MaplibreGL Style [layout](https://www.maplibre.com/maplibre-gl-js/style-spec/#layout-property) object to override
   */
   setLayoutForLayer(...args) {
     this._mutateLayerProperty('layout', ...args);
